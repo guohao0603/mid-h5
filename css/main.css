@@ -1,0 +1,406 @@
+html,
+body {
+  position: relative;
+  height: 100vh;
+}
+* {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  touch-action: none;
+}
+#music{
+    position: absolute;
+    top: 0.38rem;
+    right:0.38rem;
+    width: 0.64rem;
+    height: 0.64rem;
+    border-radius: 50%;
+    z-index: 9999;
+    background:url('../imgs/music.png') no-repeat;
+    background-size: 100% 100%;
+}
+.music-move{
+    animation: music-roate 6s linear infinite;
+}
+@keyframes music-roate{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/bg1.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+#arrow{
+    position: absolute;
+    width: 0.62rem;
+    height: 0.36rem;
+    background: url("../imgs/arrrow.png") no-repeat;
+    background-size: 100% 100%;
+    bottom: 0.8rem;
+    left: 50%;
+    margin-left: -0.31rem;
+    z-index: 9999;
+    animation: arrow-up 2s linear infinite;
+}
+@keyframes arrow-up{
+    25%{
+        transform: translateY(0.4rem);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(0.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.pic1{
+    position: absolute;
+    top: 0.95rem;
+    left: 50%;
+    width: 4.12rem;
+    height: 4.22rem;
+    margin-left: -2.06rem;
+    background: url('../imgs/rabit.png') no-repeat;
+    background-size: 100% 100%;
+}
+.pic2{
+    width: 6.02rem;
+    height: 3.11rem;
+    position: absolute;
+    top: 5.27rem;
+    left: 50%;
+    margin-left: -3.01rem;
+    background: url('../imgs/zhong.png') no-repeat;
+    background-size: 100% 100%;
+}
+.pic3{
+    position: absolute;
+    width: 2.04rem;
+    height: 0.54rem;
+    top: 7.43rem;
+    left: 1.8rem;
+    background: url('../imgs/ying.png') no-repeat;
+    background-size: 100% 100%;
+}
+.pic4{
+    position: absolute;
+    width: 0.47rem;
+    height: 0.47rem;
+    top: 7.78rem;
+    left: 5.24rem;
+    background: url('../imgs/yinzhang.png') no-repeat;
+    background-size: 100% 100%;
+}
+.pic5{
+    position: absolute;
+    width: 5.75rem;
+    height: 0.4rem;
+    line-height: 2;
+    top: 8.72rem;
+    left: 50%;
+    margin-left: -2.875rem;
+    color: rgb(175, 133, 74);
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 0.3rem;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+.two-pic1{
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('../imgs/cicle.png') no-repeat;
+    background-size: 100% 100%;
+    top:-0.6rem;
+    left: -0.6rem;
+}
+.two-pic2{
+    position: absolute;
+    width: 1.64rem;
+    height: 2.04rem;
+    top: 0;
+    right: 0;
+    background: url('../imgs/lamp.png') no-repeat;
+    background-size: 100% 100%;
+}
+.two-pic3{
+    position: absolute;
+    width: 3.25rem;
+    height: 1.05rem;
+    top: 1.6rem;
+    left: 50%;
+    margin-left: -1.625rem;
+    padding-top: 0.2rem;
+    padding-left: 0.22rem;
+    box-sizing: border-box;
+    background: url('../imgs/rect1.png');
+    background-size: 100% 100%;
+}
+.two-pic3-bg{
+    width: 2.8rem;
+    height: 0.62rem;
+    background: url('../imgs/rect2.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 0.62rem;
+    font-size: 0.4rem;
+    color: #000000;
+    font-weight: 800;
+}
+.two-pic4{
+    position: absolute;
+    width: 5.15rem;
+    height: 2.9rem;
+    top: 3.06rem;
+    left: 50%;
+    padding-top: 0.1rem;
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+    margin-left: -2.6rem;
+    background: url('../imgs/rect3.png') no-repeat;
+    background-size: 100% 100%;
+}
+.two-pic4-bg{
+    width: 4.96rem;
+    height: 2.7rem;
+    background: url('../imgs/rect4.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.08rem;
+    padding-left: 0.09rem;
+    box-sizing: border-box;
+}
+.two-pic4-bg img{
+    width: 4.78rem;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+}
+.two-pic5{
+    width: 5.14rem;
+    height: 3.06rem;
+    position: absolute;
+    top: 6.2rem;
+    left: 50%;
+    margin-left: -2.57rem;
+    line-height: 1.8;
+    text-align: left;
+    overflow-wrap: break-word;
+    font-size: 0.28rem;
+    color: #a88653;
+    text-indent: 0.9rem;
+    letter-spacing: 0px;
+}
+.three-pic4{
+    width: 5.16rem;
+    height: 2.94rem;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    margin-left: -2.58rem;
+    background: url('../imgs/rect3.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.12rem;
+    padding-left: 0.12rem;
+    box-sizing: border-box;
+}
+.three-pic4-left{
+    width: 0.87rem;
+    height: 2.7rem;
+    float: left;
+    border-radius: 0.1rem;
+    background: url('../imgs/rect4.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.38rem;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.36rem;
+    padding-bottom: 0.36rem;
+    box-sizing: border-box;
+}
+.three-pic4-right{
+    width: 4.17rem;
+    height: 2.66rem;
+    float: left;
+    padding-top: 0.22rem;
+    padding-left: 0.18rem;
+    box-sizing: border-box;
+    font-size: 0.28rem;
+    color: #9d7e4f;
+    text-align: left;
+    line-height: 1.8;
+    letter-spacing: 0px;
+}
+.three-pic5{
+    width: 5.16rem;
+    height: 2.94rem;
+    position: absolute;
+    top: 6.4rem;
+    left: 50%;
+    margin-left: -2.58rem;
+    background: url('../imgs/rect3.png') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.12rem;
+    padding-right: 0.12rem;
+    box-sizing: border-box;
+}
+.three-pic5-left{
+    width: 0.87rem;
+    height: 2.7rem;
+    float: right;
+    border-radius: 0.1rem;
+    background: url('../imgs/rect4.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.38rem;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.36rem;
+    padding-bottom: 0.36rem;
+    box-sizing: border-box;
+}
+.three-pic5-right{
+    width: 4.17rem;
+    height: 2.66rem;
+    float: right;
+    padding-top: 0.22rem;
+    padding-left: 0.26rem;
+    box-sizing: border-box;
+    font-size: 0.28rem;
+    color: #9d7e4f;
+    text-align: left;
+    line-height: 1.8;
+    letter-spacing: 0px;
+}
+.four-pic4{
+    width: 5.66rem;
+    height: 2.78rem;
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+    margin-left: -2.83rem;
+    display: flex;
+    justify-content: space-between;
+}
+.four-pic4-border{
+    width: 2.75rem;
+    height: 2.75rem;
+    padding-top: 0.05rem;
+    padding-left: 0.05rem;
+    box-sizing: border-box;
+    background: url('../imgs/square1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.four-pic4-content{
+    width: 2.62rem;
+    height: 2.62rem;
+    padding: 0.05rem;
+    box-sizing: border-box;
+    background: url('../imgs/square2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.four-pic4-img{
+    width: 2.52rem;
+    height: 2.52rem;
+    background: url('../imgs/ren3.jpg') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.2rem;
+}
+.four-pic4-img2{
+    width: 2.52rem;
+    height: 2.52rem;
+    background: url('../imgs/ren4.jpg') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.2rem;
+}
+.four-pic4-img3{
+    width: 2.52rem;
+    height: 2.52rem;
+    background: url('../imgs/ren1.jpg') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.2rem;
+}
+.four-pic4-img4{
+    width: 2.52rem;
+    height: 2.52rem;
+    background: url('../imgs/ren2.jpg') no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.2rem;
+}
+.four-pic6{
+    width: 5.66rem;
+    height: 2.78rem;
+    position: absolute;
+    top: 6.8rem;
+    left: 50%;
+    margin-left: -2.83rem;
+    display: flex;
+    justify-content: space-between;
+}
+.four-pic7{
+    width: 5.56rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    margin-left: -2.83rem;
+}
+.five-video{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.lin{
+    width: 5rem;
+    height: 6rem;
+    border-radius: 0.2rem;
+}
