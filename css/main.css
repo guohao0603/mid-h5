@@ -343,29 +343,33 @@ body {
 .four-pic4-img{
     width: 2.52rem;
     height: 2.52rem;
-    background: url('../imgs/ren3.jpg') no-repeat;
+    background: url('../imgs/pic4.jpg') no-repeat;
+    background-size: 2.8rem 2.8rem;
     background-size: 100% 100%;
     border-radius: 0.2rem;
 }
 .four-pic4-img2{
     width: 2.52rem;
     height: 2.52rem;
-    background: url('../imgs/ren4.jpg') no-repeat;
+    background: url('../imgs/pic3.jpg') no-repeat;
+    background-size: 2.8rem 2.8rem;
     background-size: 100% 100%;
     border-radius: 0.2rem;
 }
 .four-pic4-img3{
     width: 2.52rem;
     height: 2.52rem;
-    background: url('../imgs/ren1.jpg') no-repeat;
+    background: url('../imgs/pic2.jpg') no-repeat;
+    background-size: 2.8rem 2.8rem;
     background-size: 100% 100%;
     border-radius: 0.2rem;
 }
 .four-pic4-img4{
     width: 2.52rem;
     height: 2.52rem;
-    background: url('../imgs/ren2.jpg') no-repeat;
-    background-size: 100% 100%;
+    background: url('../imgs/pic1.jpg') no-repeat;
+    background-size: 2.8rem 2.8rem;
+    background-position: center center;
     border-radius: 0.2rem;
 }
 .four-pic6{
